@@ -1,0 +1,276 @@
+/* UTILITIES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: cursive;
+}
+.inputa{
+    margin-left: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+  position: fixed;
+  z-index: 12;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: teal;
+  color: #fff;
+}
+
+.nav-links a {
+  color: #fff;
+}
+
+/* LOGO */
+.logo {
+  font-size: 32px;
+}
+
+/* NAVBAR MENU */
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+  position: relative;
+}
+
+.menu li:hover {
+  background-color: #4c9e9e;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.menu li {
+  padding: 5px 14px;
+  position: relative;
+}
+
+/* DROPDOWN MENU */
+.services {
+  position: relative; 
+}
+
+.dropdown {
+  background-color: rgb(1, 139, 139);
+  padding: 1em 0;
+  position: absolute; /*WITH RESPECT TO PARENT*/
+  display: none;
+  border-radius: 8px;
+  top: 35px;
+}
+
+.dropdown li + li {
+  margin-top: 10px;
+}
+
+.dropdown li {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: center;
+}
+
+.dropdown li:hover {
+  background-color: #4c9e9e;
+}
+
+.services:hover .dropdown {
+  display: block;
+}
+#search{
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 1px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+/*movies*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.order{
+    position: fixed;
+    top: 0;
+    left: auto;
+    background-color: white;
+    color: black;
+    width: 300px;
+    height: 350px;
+    z-index: 100;
+}
+
+/* vaxtincha */
+
+img{
+    width: 120px;
+    height: 100px;
+}
+
+/* vaxtincha */
+body{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.container{
+        width: 1200px;
+        height: auto;
+        margin: 0 auto;
+}
+
+.menus-area::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    z-index: -1;
+    opacity: 0.8;
+    left: 0;
+    top: 0;
+}
+
+.menus-area{
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 2;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.section-title h4{
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+
+.section-title{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.menus{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu-items{
+    flex-basis: 32%;
+}
+
+.title{
+    background-color: #ff7720;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 24px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.single-menu{
+    background-color: #333;
+    border: 2px solid white;
+    padding: 25px;
+    text-align: center;
+    position: relative;
+    transition: .3s;
+    margin-top: 30px;
+}
+
+.single-menu span{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #ff7720;
+    padding: 8px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 15px 0 0 0;
+}
+
+.single-menu img{
+    width: 100%;
+    height: 300px;
+    border: 1px solid #ddd;
+    padding: 1px;
+    transition: .3s;
+}
+/* dashed */
+.single-menu h4{
+    border-bottom: 1px solid #ddd;
+    margin: 10px 0;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    font-size: 24px;
+}
+
+.single-menu a{
+    display: inline-block;
+    color: #ff7720;
+    text-transform: uppercase;
+    margin-top: 5px;
+    text-decoration: none;
+    border: 1px solid #ff7720;
+    padding: 5px;
+}
+
+/*.single-menu:hover img{
+    border-radius: 50%;
+}*/
+
+.single-menu:hover{
+    cursor: pointer;
+    border-color: #ff7720;
+    border-radius: 7px;
+}
+
+@media only  screen and (max-width:767px){
+    .container{
+        width: 350px; 
+    }
+    .section-title h4{
+        font-size: 34px;
+        line-height: 50px;
+    }
+    .menu-items{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+/*footer*/{
+    background-color: rgb(25, 56, 200);
+}
+.email{
+
+}
+
+.textt{
+    display: flex;
+}
+.aaaaaaa{
+    margin-top: 40px;
+}

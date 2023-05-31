@@ -1,0 +1,47 @@
+.cantener{
+    background-color: rgba(74, 76, 84, 0.992);
+    padding: 20px;
+}
+.text{
+    margin-left: 40px;
+}
+.logo{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.cantener{
+    display: flex;
+}
+.texxx{
+    display: flex;
+    align-items: center;
+}
+.texxx h1{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px 60px;
+
+    background-color: rgba(162, 168, 174, 0.579);
+}
+.texxx h2{
+    color: #fff;
+    padding: 5px 60px;
+    margin-left: 20px;
+    background-color: rgb(52, 52, 53);
+    font-size: 20px;
+    font-weight: 600;  
+    margin-bottom: 24px; 
+}
+h2:hover{
+    background-color: rgb(14, 14, 16) ;
+}
+button{
+    padding: 10px 40px;
+    border-radius: 10px;
+    background-color: blue;
+    font-size: 20px;
+    font-weight: 600;
+}
+a{
+    margin-left: 340px;
+}

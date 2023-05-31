@@ -1,0 +1,139 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
+
+</head>
+
+<body>
+  <nav class="navbar">
+    <!-- LOGO -->
+    <div class="logo">FindingMovie</div>
+
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+
+        <li><a href="websayt.html">Home</a></li>
+        
+
+        
+
+        <li><a href="TREYLERLAR.html">Treyler</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><input class="inputa" type="text" placeholder="Search.." id="search"></li>
+      </div>
+    </ul>
+  </nav>
+<!-- movies -->
+    <section class="menus-area" style="background-image: url(images/1.jpg)">
+      <div class="container">
+        <div class="section-title">
+          <h4>Exclusive menu</h4>
+          
+        </div>
+        <h1 style="text-align: center;">Treylerlar</h1>
+        <div class="menus">
+          <div class="menu-items">
+            
+            <div class="single-menu">
+              
+              <img src="images/Uddalab.jpg" alt="" />
+              <h4>Uddalab bo`lmas topshiriq</h4>
+              
+              <a href="Uddalab.html" class="ButtonOrder">Ko'rish</a>
+            </div>
+
+            <div class="single-menu">
+              
+              <img src="images/Joker.jpg" alt="" />
+              <h4>Joker</h4>
+              
+              <a href="Joker.html" class="ButtonOrder">Ko`rish</a>
+            </div>
+          </div>
+          
+          <div class="menu-items">
+            
+            <div class="single-menu">
+              
+              <img src="images/JonUik.jpg" alt="" />
+              <h4>Jon Uik</h4>
+              
+              <a href="Jon.html" class="ButtonOrder">Ko`rish</a>
+            </div>
+
+            <div class="single-menu">
+              
+              <img src="images/Hobs.jpg" alt="" />
+              <h4>Hobs va Shov</h4>
+              
+              <a href="Hobs.html" class="ButtonOrder">Ko`rish</a>
+            </div>
+          </div>
+
+          <div class="menu-items">
+            
+            <div class="single-menu">
+              
+              <img src="images/Femini.jpg" alt="" />
+              <h4>Gemini</h4>
+              
+              <a href="Gemini.html" class="ButtonOrder">Ko`rish</a>
+            </div>
+
+            <div class="single-menu">
+              
+              <img src="images/Uddaburon.jpg" alt="" />
+              <h4>Uddaburon yigitlar</h4>
+              
+              <a href="Uddaburon.html" class="ButtonOrder">Ko`rish</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<footer id="footer" class="footer">
+
+    
+
+    <div class="footer-legal text-center position-relative">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>FindingMovie</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/ -->
+          Designed by <a href="https://bootstrapmade.com/">Azizbek Sapayev</a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+    <script>
+      document.getElementById('search').addEventListener('input', function(){
+          let x = document.getElementById('search').value.toLowerCase();
+          document.querySelectorAll('.menu-items .single-menu').forEach(data =>{
+            let y =data.querySelector('h4').innerHTML.toLowerCase();
+            if(!y.includes(x)){
+              data.style.display = "none";
+            }else{
+              data.style.display = "block";
+            }
+          })
+      })
+    </script>
+</body>
+
+</html>
